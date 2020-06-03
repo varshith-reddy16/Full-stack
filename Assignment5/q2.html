@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+          function myfun(){
+              var p=document.getElementById("pass").value;
+              if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#!_-]).{6,12}$/.test(p))
+              {
+                 document.getElementById("m").innerHTML="valid"
+              }
+              else{
+                document.getElementById("m").innerHTML="notvalid"
+              }
+          }
+        </script>
+    </head>
+    <body>
+        <input type="password" id="pass">
+        <button onclick="myfun()">Validate</button>
+        <span id="m"></span>
+        </body>
+</html>
