@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link href="style.css"rel="StyleSheet"/>
+        <script>
+            function myfun(){
+                var d=document.getElementById("d").value;
+                var n=document.getElementById("n").value;
+                var u=document.getElementById("u").value;
+                var p=document.getElementById("p").value;
+                if(/^[A-Z][A-Za-z0-9]{2,12}$/.test(u)&&/^[A-Za-z0-9]{6,12}$/.test(p)&&/^[A-Z]{2,12}$/.test(n)&&/^(([0-2][0-9])|([3][0-1]))[/](([0][0-9])|([1][0-2]))[/](([1][9][0-9]{2})|([2][0-9]){3})$/.test(d))
+                {
+                    msg();
+                }
+                else{
+                    window.alert("Retype");
+                }
+                function msg()
+                {
+                    window.alert("Registration Successfull");
+                }
+            }
+        </script>
+        </script>
+    </head>
+    <body>
+        <body>
+            <div>
+            <div class="a">
+                <div class="b">
+                    <img src="logo.jpg" height="70px" width="70px">
+                </div>
+                <div class="t">
+                    <h3>REGISTRATION FOR PLACEMENTS</h3>
+                </div>
+                <div class="c">
+                    <img src="logo.jpg"height="70px"width="70px">
+                </div>
+            </div>
+            </div>
+            <div class="x">
+             <ul>
+                 <a href="home.html"target="_self"><li>HOME</li></a>
+                 <a href="about.html"target="_self"><li>ABOUT US</li></a>
+                 <a href="contact.html"target="_self"><li>CONTACT US</li></a>
+                 <a href="login.html"target="_self"><li>LOGIN</li></a>
+                 <a href="feed.html"target="_self"><li>FEEDBACK</li></a>
+                 <a><li>REGISTRATION</li></a>
+             </ul>
+            </div>
+            <div class="r">
+            Name:<input type="text" id="n"> <span><small>(Enter in caps)</small></span><br><br>
+            Username:<input type="text" id="u"> <span><small>(Start with Uppercase)</small></span><br><br>
+            Password:<input type="text" id="p"> <span><small>(Atleast 6 characters)</small></span><br><br>
+            Date of Birth:<input type="text" id="d"> <span><small>(Enter in dd/mm/yyyy format)</small></span><br><br>
+            <button id="bt3" onclick="myfun()">Submit</button>
+            </div>

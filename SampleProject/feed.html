@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link href="style.css"rel="StyleSheet"/>
+        <script>
+          function myfun(){
+              var p=document.getElementById("p").value;
+              if(/^[2][2][1][7][1][0][3][0][1-9][0-6][0-6][1-6]$/.test(p))
+              {
+                  window.alert("Feedback Posted");
+              }
+              else{
+                  window.alert("Invalid pin");
+              }
+          }
+        </script>
+    </head>
+    <body>
+        <div>
+        <div class="a">
+            <div class="b">
+                <img src="logo.jpg" height="70px" width="70px">
+            </div>
+            <div class="t">
+                <h3>REGISTRATION FOR PLACEMENTS</h3>
+            </div>
+            <div class="c">
+                <img src="logo.jpg"height="70px"width="70px">
+            </div>
+        </div>
+        </div>
+        <div class="x">
+         <ul>
+            <a href="home.html"target="_self"><li>HOME</li></a>
+             <a href="about.html"target="_self"><li>ABOUT US</li></a>
+             <a href="contact.html"target="_self"><li>CONTACT US</li></a>
+             <a href="login.html" target="_self"><li>LOGIN</li></a>
+             <a><li>FEEDBACK</li></a>
+             <a href="regis.html"target="_self"><li>REGISTRATION</li></a>
+         </ul>
+        </div>
+        <div id="f">
+            Pin No:  <input type="number" id="p"><br><br><br>
+            FeedBack: <textarea rows="5" cols="20"></textarea><br><br>
+            <button onclick="myfun()" id="bt">Submit</button>
+        </div>
+    </body>
+    </html>

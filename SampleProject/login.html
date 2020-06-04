@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link href="style.css"rel="StyleSheet"/>
+        <script>
+            function myfun(){
+                var u=document.getElementById("uid").value;
+                var p=document.getElementById("pid").value;
+                if(/^[A-Z][A-Za-z0-9]{2,12}$/.test(u)&&/^[A-Za-z0-9]{6,12}$/.test(p))
+                {
+                    msg();
+                }
+                else{
+                    window.alert("Retype");
+                }
+                function msg()
+                {
+                    window.alert("Login Successfull");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <body>
+            <div>
+            <div class="a">
+                <div class="b">
+                    <img src="logo.jpg" height="70px" width="70px">
+                </div>
+                <div class="t">
+                    <h3>REGISTRATION FOR PLACEMENTS</h3>
+                </div>
+                <div class="c">
+                    <img src="logo.jpg"height="70px"width="70px">
+                </div>
+            </div>
+            </div>
+            <div class="x">
+             <ul>
+                 <a href="home.html"target="_self"><li>HOME</li></a>
+                 <a href="about.html"target="_self"><li>ABOUT US</li></a>
+                 <a href="contact.html"target="_self"><li>CONTACT US</li></a>
+                 <a><li>LOGIN</li></a>
+                 <a href="feed.html"target="_self"><li>FEEDBACK</li></a>
+                 <a href="regis.html"target="_self"><li>REGISTRATION</li></a>
+             </ul>
+            </div>
+            <div class="loginb">
+        Username:<input type="text" id="uid"><p>(Begin with uppercase)</p><br>
+        Password:<input type="password"id="pid"><p>(Atleast 6 characters)</p><br>
+        <button id="bt2"onclick="myfun()">LogIn</button>
+        </div>
+        </body>
+</html>
