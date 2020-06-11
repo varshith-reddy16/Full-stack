@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+      $("#bt").click(function(){
+        var div=$(".d");
+        div.animate({height:'300px'},"fast");
+        div.animate({width:'300px'},"slow");
+        div.animate({height:'100px',},"fast");
+      });
+  });
+</script>
+<style>
+  .d{
+      height:80px;
+      width: 80px;
+      background-color:teal;
+      position: absolute;
+  }
+</style>
+</head>
+<body>
+    <button type="button"id="bt">Animate</button>
+    <div class="d">
+
+    </div>
+</body>
