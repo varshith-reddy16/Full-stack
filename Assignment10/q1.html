@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    </head>
+     <script>
+      $(document).ready(function(){
+          $("#btn").click(function(){
+          var val1=$("#uid").val();
+          var val2=$("#pid").val();
+          var reg=/^[A-Za-z0-9]{6,12}$/;
+          if(reg.test(val1)&& reg.test(val2))
+          {
+              window.alert("Validated");
+          }
+          else
+          {
+              window.alert("check your details");
+          }
+          });
+      });
+    </script>
+    <body>
+        <div class="container">
+            <div class="form-group">
+            <label>Username</label>
+            <input type="text" id="uid" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="pid" class="form-control">
+            </div>
+            <button type="button" class="btn btn-primary" id="btn">LogIn</button>
+            </form>
+    </body>
+</html>
