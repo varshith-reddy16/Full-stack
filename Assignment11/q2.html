@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/02518dd29f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="audio1">
+        <audio controls id="myaudio">
+          <source src="mp1.mp3" type="audio/mp3" />
+        </audio>
+        <button
+          type="button"
+          onclick="playaudio()"
+          class="btn btn-primary"
+          id="bt1"
+        >
+          Play
+        </button>
+        <button
+          type="button"
+          onclick="pauseaudio()"
+          class="btn btn-primary"
+          id="bt2"
+        >
+          Pause
+        </button>
+      </div>
+      <div class="audio2 mt-2">
+        <audio controls>
+          <source src="mp2.mp3" />
+        </audio>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("myaudio");
+      function playaudio() {
+        x.play();
+      }
+      function pauseaudio() {
+        x.pause();
+      }
+    </script>
+  </body>
+</html>
