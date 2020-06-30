@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: black;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        padding: 16px;
+        background-color: white;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+
+      /* Set a style for the submit button */
+      .registerbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      .registerbtn:hover {
+        opacity: 1;
+      }
+
+      /* Add a blue text color to links */
+      a {
+        color: dodgerblue;
+      }
+
+      .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <div class="container">
+        <h1>Registration form</h1>
+
+        <hr />
+
+        <label for="firstname"><b>Firstname</b></label>
+        <input
+          type="text"
+          placeholder="Enter firstname"
+          name="name"
+          id="name"
+          required
+        />
+        <label for="lasttname"><b>Lastname</b></label>
+        <input
+          type="text"
+          placeholder="Enter lastname"
+          name="name"
+          id="name"
+          required
+        />
+        <label for="DateofBirth"><b>DOB</b></label>
+        <input
+          type="text"
+          placeholder="Enter Date of birth"
+          name="Date"
+          id="name"
+          required
+        />
+        <label for="mobile"><b>MobileNumber</b></label>
+        <input
+          type="text"
+          placeholder="Enter Mobilenumber"
+          name="number"
+          id="number"
+          required
+        />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          id="psw"
+          required
+        />
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="psw-repeat"
+          id="psw-repeat"
+          required
+        />
+
+        <button type="submit" class="registerbtn">Register</button>
+        <button type="submit" class="submitbtn">Submit</button>
+        <button type="submit" class="btn primary">Cancel</button>
+      </div>
+    </form>
+  </body>
+</html>
